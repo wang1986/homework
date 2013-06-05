@@ -10,12 +10,43 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
-" original repos on github
+" nerdtree
 Bundle 'scrooloose/nerdtree'
 
+let mapleader=';'
+let g:mapleader=';'
+
+nmap <leader>n :NERDTreeToggle<CR>
+
+" solarized
+Bundle 'altercation/vim-colors-solarized'
+
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 
+" powerline
+Bundle 'Lokaltog/vim-powerline'
 
+let g:Powerline_symbols = 'fancy'
+
+" set noshowmode
+set laststatus=2
+set encoding=utf-8
+set guifont=Menlo\ for\ Powerline:h16
+
+" tab space
+set tabstop=4 shiftwidth=4 softtabstop=4
+set expandtab
+set autoindent
+set number
+set hlsearch
+
+" mouse & pasteboard
+set mouse=a
+vmap <leader>c :w !pbcopy<CR>
+nmap <leader>p :r !pbpaste<CR>
 
 filetype plugin indent on     " required!
 "
