@@ -1,0 +1,2 @@
+# man --> Preview
+man -t ifconfig | open -f -a Preview
